@@ -77,19 +77,24 @@ class _NewLoginState extends State<NewLogin> {
                       ),
                     ],
                   ),
-                  SizedBox(height: 70),
+                  SizedBox(height: 50),
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
-                      CustomText(
-                        label: 'Sign up',
-                        size: 30,
-                        boldStyle: FontWeight.bold,
-                        myDecoration: TextDecoration.underline,
+                      GestureDetector(
+                        onTap: () {
+                          print('Sign up Clicked');
+                        },
+                        child: CustomText(
+                          label: 'Sign up',
+                          size: 30,
+                          boldStyle: FontWeight.bold,
+                          myDecoration: TextDecoration.underline,
+                        ),
                       ),
                       GestureDetector(
                         onTap: () {
-                          print('Forget Password');
+                          print('Forget Password Tapped');
                         },
                         child: CustomText(
                           label: 'Forget Password',
