@@ -1,3 +1,4 @@
+import 'package:confetti/confetti.dart';
 import 'package:flutter/material.dart';
 
 class NewLogin extends StatefulWidget {
@@ -6,11 +7,26 @@ class NewLogin extends StatefulWidget {
 }
 
 class _NewLoginState extends State<NewLogin> {
+  ConfettiController control = ConfettiController();
+  @override
+  void initState() {
+    control = ConfettiController(duration: Duration(seconds: 10));
+
+    super.initState();
+  }
+
+  @override
+  void dispose() {
+    super.dispose();
+    control.dispose();
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       body: SafeArea(
         child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Stack(
               children: [
@@ -63,17 +79,18 @@ class _NewLoginState extends State<NewLogin> {
                         label: 'Sign in',
                         size: 40,
                       ),
-                      CircleAvatar(
-                        radius: 40,
-                        
-                        backgroundColor: Colors.black,
-                        child: IconButton(
-                          icon: Icon(
-                            Icons.arrow_forward,
-                            color: Colors.white,
-                            size: 40,
-                          ),
-                          onPressed: null,
+                      ConfettiCelebration(control: control),
+                      GestureDetector(
+                        onTap: () {
+                          setState(() {
+                            control.play();
+                          });
+                          print('Confetti blast');
+                        },
+                        child: CircleAvatar(
+                          radius: 40,
+                          backgroundColor: Colors.black,
+                          child: Icon(Icons.arrow_forward,size: 50),
                         ),
                       ),
                     ],
@@ -111,6 +128,26 @@ class _NewLoginState extends State<NewLogin> {
             ),
           ],
         ),
+      ),
+    );
+  }
+}
+
+class ConfettiCelebration extends StatelessWidget {
+  const ConfettiCelebration({
+    Key key,
+    @required this.control,
+  }) : super(key: key);
+
+  final ConfettiController control;
+
+  @override
+  Widget build(BuildContext context) {
+    return Align(
+      alignment: Alignment.center,
+      child: ConfettiWidget(
+        confettiController: control,
+        blastDirectionality: BlastDirectionality.explosive,
       ),
     );
   }

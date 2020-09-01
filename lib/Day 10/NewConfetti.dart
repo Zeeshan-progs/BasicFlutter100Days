@@ -3,14 +3,15 @@
 import 'package:confetti/confetti.dart';
 import 'package:flutter/material.dart';
 
+
 class NewConfetti extends StatefulWidget {
   @override
   _NewConfettiState createState() => _NewConfettiState();
 }
 
 class _NewConfettiState extends State<NewConfetti> {
-// define confettie controller
-  ConfettiController control;
+
+  ConfettiController control = ConfettiController();
 
   @override
   // define initState
@@ -32,10 +33,10 @@ class _NewConfettiState extends State<NewConfetti> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text("Day 10 Confetti "),
-        centerTitle: true,
-      ),
+      // appBar: AppBar(
+      //   title: Text("Day 10 Confetti "),
+      //   centerTitle: true,
+      // ),
       body: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
@@ -54,12 +55,12 @@ class _NewConfettiState extends State<NewConfetti> {
           ),
 
           // create a button for celebration
-          FlatButton(
-            onPressed: () {
-              control.play();
-            },
-            child: Text("Click To Celebrate "),
-          ),
+          // FlatButton(
+          //   onPressed: () {
+          //     control.play();
+          //   },
+          //   child: Text("Click To Celebrate "),
+          // ),
         ],
       ),
     );
