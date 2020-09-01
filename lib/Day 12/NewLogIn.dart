@@ -65,6 +65,7 @@ class _NewLoginState extends State<NewLogin> {
                       ),
                       CircleAvatar(
                         radius: 40,
+                        
                         backgroundColor: Colors.black,
                         child: IconButton(
                           icon: Icon(
