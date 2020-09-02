@@ -19,3 +19,13 @@ Day 8 - Image Slider with Icon And Flat Button ->>>>>> https://youtu.be/2Akf9urH
 Day 9 - Carousel Slider ->>>>>> https://youtu.be/khu-PFlLpOs
 
 Day 10 - Confetti Package ->>>>>> https://youtu.be/jLryLI5r1KI
+
+
+Day 11 - Animated Container ->>>>>> https://youtu.be/0cbo0r__Fa8
+
+
+Day 12 - Basic Login Ui ->>>>>> https://youtu.be/gCx6WVGRag4
+
+
+
+
