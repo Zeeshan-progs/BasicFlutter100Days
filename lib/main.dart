@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:flutter100days/Day%2012/NewLogIn.dart';
+import 'package:flutter100days/Day%2012/NewSignUp.dart';
 
-import 'Day 12/NewLogIn.dart';
 
 void main() {
   runApp(MyApp());
@@ -11,7 +12,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: NewLogin(),
+      home: NewSignUp(),
     );
   }
 }
