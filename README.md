@@ -39,3 +39,8 @@ Day 12 - Basic Login Ui part 1   ----->>>>>> https://youtu.be/gCx6WVGRag4
 Day 13  - Basic Logn Ui Part 2   ---->>>>>>>>>https://youtu.be/qjRUFwEwVoE
 
 
+Day 14  - Credit card Animation   ---->>>>>>>>>https://youtu.be/M5uoushbV7g
+
+
+Day 15  -   On Board Getting Started Screen  ---->>>>>>>>>https://youtu.be/qoHDlj1hEP8
+
