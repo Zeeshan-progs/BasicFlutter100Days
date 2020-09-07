@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter100days/Day%2014/NewOnBoard.dart';
 
-
+import 'Day 14 on Board/NewOnBoard.dart';
 
 void main() {
   runApp(MyApp());
