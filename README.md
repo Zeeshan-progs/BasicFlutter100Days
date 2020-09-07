@@ -44,6 +44,8 @@ Day 14  - Credit card Animation   ---->>>>>>>>>https://youtu.be/M5uoushbV7g
 
 Day 15  -   On Board Getting Started Screen  ---->>>>>>>>>https://youtu.be/qoHDlj1hEP8
 
+day 15 -->> ### **On Board Screen Design**    [ Watch it On Youtube](https://www.youtube.com/watch?v=qoHDlj1hEP8) 
+![flutter](https://user-images.githubusercontent.com/67018643/92416966-7e46da00-f17d-11ea-9b81-a7746a96abf7.jpg)
 
 
 
