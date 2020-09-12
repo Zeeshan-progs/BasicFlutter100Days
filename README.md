@@ -35,11 +35,6 @@
 
 
 
-Day 16    ->>   [    **Starbucks App**   ](https://www.youtube.com/watch?v=Z4xTAmcsTew)
-
-
-
-![pqrt 1](https://user-images.githubusercontent.com/67018643/92997806-ab0b4080-f533-11ea-9d04-27287ee279a5.jpg)
 
 
 
@@ -62,3 +57,9 @@ Day 16    ->>   [    **Starbucks App**   ](https://www.youtube.com/watch?v=Z4xTA
 
 
 
+
+Day 16    ->>   [    **Starbucks App**   ](https://www.youtube.com/watch?v=Z4xTAmcsTew)
+
+
+
+![pqrt 1](https://user-images.githubusercontent.com/67018643/92997806-ab0b4080-f533-11ea-9d04-27287ee279a5.jpg)
