@@ -47,7 +47,7 @@
 [**### Day 13  - Basic Logn Ui Part 2**  ](https://youtu.be/qjRUFwEwVoE) 
 
 
-[**### Day 14  - Credit card Animation** ](https://youtu.be/M5uoushbV7g) ]
+[**### Day 14  - Credit card Animation** ](https://youtu.be/M5uoushbV7g) 
 
 
  ### ** Day 15 - On Board Screen Design**    [ Watch it On Youtube](https://www.youtube.com/watch?v=qoHDlj1hEP8) 
