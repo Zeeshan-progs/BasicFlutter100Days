@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'Slide_Content.dart';
+import 'Slide_Content.dart'; // Watch us on Youtube Code With Nix for full tutorial
 
 class CustomOnBoard extends StatefulWidget {
   @override
