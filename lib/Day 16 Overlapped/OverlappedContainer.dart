@@ -9,17 +9,15 @@ Color grey = Colors.grey;
 class OverlappedContainer extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return SafeArea(
-      child: Scaffold(
-        backgroundColor: Colors.black,
-        body: Column(
-          children: [
-            buildMenu(),
-            firstContainer(),
-            secondContainer(),
-            thirdContainer(),
-          ],
-        ),
+    return Scaffold(
+      backgroundColor: Colors.black,
+      body: ListView(
+        children: [
+          buildMenu(),
+          firstContainer(),
+          secondContainer(),
+          thirdContainer(),
+        ],
       ),
     );
   }
@@ -80,13 +78,13 @@ class OverlappedContainer extends StatelessWidget {
         color: blue,
         child: Container(
           alignment: Alignment.bottomLeft,
-          padding: EdgeInsets.only(bottom: 40, left: 30, top: 20),
+          padding: EdgeInsets.only(bottom: 20, left: 30, top: 20),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
               Container(
-               alignment: Alignment.bottomLeft,
-               padding: EdgeInsets.only(bottom: 10),
+                alignment: Alignment.bottomLeft,
+                padding: EdgeInsets.only(bottom: 10),
                 child: Text(
                   'Today 5:30 pm',
                   style: TextStyle(fontSize: 20, color: grey),
@@ -100,8 +98,8 @@ class OverlappedContainer extends StatelessWidget {
                 ),
               ),
               Container(
-               alignment: Alignment.bottomRight,
-               padding: EdgeInsets.only(right: 30),
+                alignment: Alignment.bottomRight,
+                padding: EdgeInsets.only(right: 30),
                 child: Opacity(
                   opacity: .2,
                   child: Icon(
@@ -119,18 +117,47 @@ class OverlappedContainer extends StatelessWidget {
 
   Widget secondContainer() {
     return Container(
-      padding: EdgeInsets.only(bottom: 10),
-      color: deepPurple,
       width: double.infinity,
+      color: deepPurple,
+      alignment: Alignment.bottomLeft,
       child: Material(
         borderRadius: BorderRadius.only(
           bottomLeft: Radius.circular(80),
         ),
         color: purple,
-        child: Center(
-          child: Text(
-            ' Aother Material Color used with text',
-            style: TextStyle(color: white, fontSize: 30),
+        child: Container(
+          alignment: Alignment.bottomLeft,
+          padding: EdgeInsets.only(bottom: 20, left: 30, top: 20),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.center,
+            children: [
+              Container(
+                alignment: Alignment.bottomLeft,
+                padding: EdgeInsets.only(bottom: 10),
+                child: Text(
+                  'Today 5:30 pm',
+                  style: TextStyle(fontSize: 20, color: grey),
+                ),
+              ),
+              Text(
+                'Some Selected Text taken in reference ',
+                style: TextStyle(
+                  fontSize: 40,
+                  color: white,
+                ),
+              ),
+              Container(
+                alignment: Alignment.bottomRight,
+                padding: EdgeInsets.only(right: 30),
+                child: Opacity(
+                  opacity: .2,
+                  child: Icon(
+                    Icons.gesture,
+                    size: 80,
+                  ),
+                ),
+              ),
+            ],
           ),
         ),
       ),
@@ -139,16 +166,48 @@ class OverlappedContainer extends StatelessWidget {
 
   Widget thirdContainer() {
     return Container(
-      color: Colors.black,
       width: double.infinity,
+      color: Colors.black,
+      alignment: Alignment.bottomLeft,
       child: Material(
-        color: deepPurple,
         borderRadius: BorderRadius.only(
           bottomLeft: Radius.circular(80),
         ),
-        child: Center(
-          child: Text('Bottom Text',
-              style: TextStyle(fontSize: 30, color: white)),
+        color: deepPurple,
+        child: Container(
+          alignment: Alignment.bottomLeft,
+          padding: EdgeInsets.only(bottom: 10, left: 30, top: 20),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.center,
+            children: [
+              Container(
+                alignment: Alignment.bottomLeft,
+                padding: EdgeInsets.only(bottom: 10),
+                child: Text(
+                  'Today 5:30 pm',
+                  style: TextStyle(fontSize: 20, color: grey),
+                ),
+              ),
+              Text(
+                'Todys socials life',
+                style: TextStyle(
+                  fontSize: 40,
+                  color: white,
+                ),
+              ),
+              Container(
+                alignment: Alignment.bottomRight,
+                padding: EdgeInsets.only(right: 30),
+                child: Opacity(
+                  opacity: .2,
+                  child: Icon(
+                    Icons.receipt,
+                    size: 80,
+                  ),
+                ),
+              ),
+            ],
+          ),
         ),
       ),
     );
