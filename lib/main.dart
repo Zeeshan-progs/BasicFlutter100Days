@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter100days/Day%20%2015%20StarBucks%20Menu/Starbucks.dart';
-
+import 'package:flutter100days/Day%2014%20on%20Board/NewOnBoard.dart';
 
 void main() {
   runApp(MyApp());
@@ -12,7 +11,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: Starbucks(),
+      home: CustomOnBoard(),
     );
   }
 }
