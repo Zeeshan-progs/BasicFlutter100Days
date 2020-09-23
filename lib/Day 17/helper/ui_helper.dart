@@ -1,5 +1,4 @@
-import 'package:flutter/material.dart';
-import 'package:flutter/cupertino.dart';
+
 
 final standardWidth = 375.0;
 final standardHeight = 815.0;

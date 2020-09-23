@@ -4,7 +4,7 @@ import 'package:flutter100days/Day%2017/helper/ui_helper.dart';
 class RecentSearchWidget extends StatelessWidget {
   final double currnetSearchPercent;
 
-  const RecentSearchWidget({Key key, this.currnetSearchPercent})
+  const RecentSearchWidget({Key key, this.currnetSearchPercent, currentSearchPercent})
       : super(key: key);
 
   @override
