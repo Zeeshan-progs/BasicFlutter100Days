@@ -118,6 +118,13 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "0.1.0"
+  flutter_svg:
+    dependency: "direct main"
+    description:
+      name: flutter_svg
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "0.19.0"
   flutter_switch:
     dependency: "direct main"
     description:
@@ -191,6 +198,20 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "1.7.0"
+  path_drawing:
+    dependency: transitive
+    description:
+      name: path_drawing
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "0.4.1+1"
+  path_parsing:
+    dependency: transitive
+    description:
+      name: path_parsing
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "0.1.4"
   path_provider:
     dependency: transitive
     description:
@@ -226,6 +247,13 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "1.9.0"
+  petitparser:
+    dependency: transitive
+    description:
+      name: petitparser
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "3.0.4"
   platform:
     dependency: transitive
     description:
@@ -248,12 +276,12 @@ packages:
     source: hosted
     version: "3.0.13"
   provider:
-    dependency: transitive
+    dependency: "direct main"
     description:
       name: provider
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "4.3.2+1"
+    version: "4.3.2+2"
   random_color:
     dependency: transitive
     description:
@@ -350,6 +378,13 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "0.1.0"
+  xml:
+    dependency: transitive
+    description:
+      name: xml
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "4.5.1"
 sdks:
   dart: ">=2.9.0-14.0.dev <3.0.0"
-  flutter: ">=1.17.0 <2.0.0"
+  flutter: ">=1.18.0-6.0.pre <2.0.0"
