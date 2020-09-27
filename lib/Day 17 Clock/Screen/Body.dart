@@ -9,7 +9,7 @@ class Body extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SingleChildScrollView(
-          child: Column(
+      child: Column(
         children: [
           Text(
             'Muzaffarpur, Bihar | INDIA  ',
@@ -21,39 +21,30 @@ class Body extends StatelessWidget {
           ),
           TimeInHourAndMinute(),
           AnalogClock(),
-          SizedBox(height: 20),
-          // SingleChildScrollView(
-          //   scrollDirection: Axis.horizontal,
-          //   child: Row(
-          //     children: [
-          //       CountryCard(
-          //         country: "New York, USA",
-          //         timeZone: "+3 HRS | EST",
-          //         time: '9 : 20',
-          //         imageSrc: 'assets/icons/Liberty.svg',
-          //         period: "PM",
-          //        ),
-          //       CountryCard(
-          //         country: "Sydney",
-          //        timeZone: "+10 HRS | GMT",
-          //         time: '11 : 20',
-          //         imageSrc: 'assets/icons/Sydney.svg',
-          //         period: "PM",
-          //       ),
-          //     ],
-          //   ),
-          // ),
-          SizedBox(width: 50,),
+          SizedBox(height: 60),
+
           SingleChildScrollView(
             scrollDirection: Axis.horizontal,
-                      child: Row(
+            child: Row(
               children: [
-                CounteryCard(color: Colors.red,),
-                CounteryCard(color: Colors.blue),
-
+                CountryCard(
+                  country: "New York, USA",
+                  timeZone: "+3 HRS | EST",
+                  time: '9 : 20',
+                  iconSrc: 'assets/icons/Liberty.svg',
+                  period: "PM",
+                 ),
+                CountryCard(
+                  country: "Sydney",
+                 timeZone: "+10 HRS | GMT",
+                  time: '11 : 20',
+                  iconSrc: 'assets/icons/Sydney.svg',
+                  period: "PM",
+                ),
               ],
             ),
           ),
+
         ],
       ),
     );
