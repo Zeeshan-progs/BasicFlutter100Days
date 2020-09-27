@@ -1,13 +1,9 @@
 import 'dart:async';
 import 'dart:math';
 
-import 'package:flutter/material.dart';
-import 'package:flutter100days/Day%2017%20Clock/Components/Size.dart';
-import 'package:flutter100days/Day%2017%20Clock/Components/constants.dart';
-import 'package:flutter100days/Day%2017%20Clock/Screen/TimeModes.dart/Analog/Clock_Paint.dart';
-import 'package:flutter100days/Day%2017%20Clock/models/Theme_Togle.dart';
-import 'package:flutter_svg/flutter_svg.dart';
-import 'package:provider/provider.dart';
+import 'package:flutter100days/Day 17 Clock/Export/export.dart';
+
+
 
 
 class AnalogClock extends StatefulWidget {

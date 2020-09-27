@@ -1,9 +1,4 @@
-import 'package:flutter/material.dart';
-import 'package:flutter100days/Day%2017%20Clock/Components/constants.dart';
-
-import 'Country Card/Country_Card_Call.dart';
-import 'Country Card/analog.dart';
-import 'TimeModes.dart/Hours_And_Minute.dart';
+import 'package:flutter100days/Day 17 Clock/Export/export.dart';
 
 class Body extends StatelessWidget {
   @override
@@ -22,12 +17,10 @@ class Body extends StatelessWidget {
           TimeInHourAndMinute(),
           AnalogClock(),
           SizedBox(height: 60),
-
           SingleChildScrollView(
             scrollDirection: Axis.horizontal,
             child: CountryCardCall(),
           ),
-
         ],
       ),
     );

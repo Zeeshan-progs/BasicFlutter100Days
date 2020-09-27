@@ -1,4 +1,3 @@
-
 import 'dart:async';
 
 import 'package:flutter/material.dart';
@@ -6,7 +5,8 @@ import 'package:flutter100days/Day%2017%20Clock/Components/Size.dart';
 
 class TimeInHourAndMinute extends StatefulWidget {
   @override
-  _TimeInHourAndMinuteState createState() => _TimeInHourAndMinuteState();
+  _TimeInHourAndMinuteState createState() =>
+      _TimeInHourAndMinuteState();
 }
 
 class _TimeInHourAndMinuteState extends State<TimeInHourAndMinute> {
@@ -36,9 +36,10 @@ class _TimeInHourAndMinuteState extends State<TimeInHourAndMinute> {
         ),
         RotatedBox(
           quarterTurns: 3,
-                  child: Text(
+          child: Text(
             _priod,
-            style: TextStyle(fontSize: getProportionateScreenWidth(23)),
+            style:
+                TextStyle(fontSize: getProportionateScreenWidth(23)),
           ),
         ),
       ],
