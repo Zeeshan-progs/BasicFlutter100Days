@@ -36,7 +36,7 @@ class _AnalogClockState extends State<AnalogClock> {
           padding: EdgeInsets.symmetric(
               horizontal: getProportionateScreenWidth(15)),
           child: AspectRatio(
-            aspectRatio: 1,
+            aspectRatio: 1.1,
             child: Container(
               decoration: BoxDecoration(
                 color: Theme.of(context).colorScheme.surface,
