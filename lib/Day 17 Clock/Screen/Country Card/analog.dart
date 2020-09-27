@@ -44,7 +44,7 @@ class _AnalogClockState extends State<AnalogClock> {
                 boxShadow: [
                   BoxShadow(
                     offset: Offset(0, 0),
-                    color: kShadowColor.withOpacity(0.15),
+                    color: kShadowColor.withOpacity(0.12),
                     blurRadius: 64,
                   ),
                 ],
