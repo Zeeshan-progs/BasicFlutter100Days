@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter100days/Day%2017%20Clock/Components/constants.dart';
 
-import 'AnalogClock/analog.dart';
-import 'CountryCard.dart';
-import 'Hours_And_Minute.dart';
+import 'Country Card/Country_Card_Call.dart';
+import 'Country Card/analog.dart';
+import 'TimeModes.dart/Hours_And_Minute.dart';
 
 class Body extends StatelessWidget {
   @override
@@ -25,24 +25,7 @@ class Body extends StatelessWidget {
 
           SingleChildScrollView(
             scrollDirection: Axis.horizontal,
-            child: Row(
-              children: [
-                CountryCard(
-                  country: "New York, USA",
-                  timeZone: "+3 HRS | EST",
-                  time: '9 : 20',
-                  iconSrc: 'assets/icons/Liberty.svg',
-                  period: "PM",
-                 ),
-                CountryCard(
-                  country: "Sydney",
-                 timeZone: "+10 HRS | GMT",
-                  time: '11 : 20',
-                  iconSrc: 'assets/icons/Sydney.svg',
-                  period: "PM",
-                ),
-              ],
-            ),
+            child: CountryCardCall(),
           ),
 
         ],

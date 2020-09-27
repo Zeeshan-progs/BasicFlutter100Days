@@ -4,11 +4,11 @@ import 'dart:math';
 import 'package:flutter/material.dart';
 import 'package:flutter100days/Day%2017%20Clock/Components/Size.dart';
 import 'package:flutter100days/Day%2017%20Clock/Components/constants.dart';
+import 'package:flutter100days/Day%2017%20Clock/Screen/TimeModes.dart/Analog/Clock_Paint.dart';
 import 'package:flutter100days/Day%2017%20Clock/models/Theme_Togle.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:provider/provider.dart';
 
-import 'Clock_Paint.dart';
 
 class AnalogClock extends StatefulWidget {
   @override
@@ -43,9 +43,10 @@ class _AnalogClockState extends State<AnalogClock> {
                 shape: BoxShape.circle,
                 boxShadow: [
                   BoxShadow(
-                      color: kShadowColor.withOpacity(.14),
-                      offset: Offset(0, 0),
-                      blurRadius: 64),
+                    offset: Offset(0, 0),
+                    color: kShadowColor.withOpacity(0.15),
+                    blurRadius: 64,
+                  ),
                 ],
               ),
               child: Transform.rotate(
@@ -64,11 +65,11 @@ class _AnalogClockState extends State<AnalogClock> {
           right: 0,
           child: Consumer<MyThemeModel>(
             builder: (context, theme, child) => GestureDetector(
-              onTap:  () => theme.changeTheme(),
+              onTap: () => theme.changeTheme(),
               child: SvgPicture.asset(
-                theme.isLightTheme ?
-                'assets/icons/Sun.svg':
-                'assets/icons/Moon.svg',
+                theme.isLightTheme
+                    ? 'assets/icons/Sun.svg'
+                    : 'assets/icons/Moon.svg',
                 height: getProportionateScreenHeight(28),
                 width: getProportionateScreenWidth(28),
                 color: Theme.of(context).primaryColor,
