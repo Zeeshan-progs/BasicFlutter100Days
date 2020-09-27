@@ -1,7 +1,6 @@
-import 'package:flutter/material.dart';
-import 'package:flutter100days/Day%2017%20Clock/Components/Size.dart';
-import 'package:flutter100days/Day%2017%20Clock/Components/constants.dart';
-import 'package:flutter_svg/flutter_svg.dart';
+
+
+import 'package:flutter100days/Day%2017%20Clock/Export/export.dart';
 
 class CountryCard extends StatelessWidget {
   final String time, timeZone, period, country, iconSrc;

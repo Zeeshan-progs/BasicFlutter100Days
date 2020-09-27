@@ -1,7 +1,5 @@
 import 'dart:async';
-
-import 'package:flutter/material.dart';
-import 'package:flutter100days/Day%2017%20Clock/Components/Size.dart';
+import 'package:flutter100days/Day 17 Clock/Export/export.dart';
 
 class TimeInHourAndMinute extends StatefulWidget {
   @override

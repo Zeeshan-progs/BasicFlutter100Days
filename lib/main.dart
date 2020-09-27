@@ -1,10 +1,6 @@
-import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
-import 'package:flutter100days/Day%2017%20Clock/models/Theme_Togle.dart';
-import 'package:provider/provider.dart';
 
-import 'Day 17 Clock/Clock.dart';
-import 'Day 17 Clock/Components/themes.dart';
+
+import 'Day 17 Clock/Export/export.dart';
 
 void main() {
   SystemChrome.setPreferredOrientations(
