@@ -1,5 +1,3 @@
-
-
 import 'Export/export.dart';
 
 class Clock extends StatelessWidget {
@@ -7,12 +5,15 @@ class Clock extends StatelessWidget {
   Widget build(BuildContext context) {
     SizeConfig().init(context);
     return Scaffold(
-        appBar: AppBar(
-          leading: SettingIcon(),
-          actions: [
-            AddButton()
-          ],
-        ),
-        body: Body());
+      appBar: buildAppBar(),
+      body: Body(),
+    );
+  }
+
+  AppBar buildAppBar() {
+    return AppBar(
+      leading: SettingIcon(),
+      actions: [AddButton()],
+    );
   }
 }
