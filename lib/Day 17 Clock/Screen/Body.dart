@@ -9,25 +9,7 @@ class Body extends StatelessWidget {
         children: [
           mainScreenText(context),
           TimeInHourAndMinute(),
-          Container(
-            child: Stack(
-              children: [
-                AnalogClock(),
-                AspectRatio(
-                  aspectRatio: 1,
-                  child: Positioned(
-                    left: 0,
-                    right: 0,
-                    child: Container(
-                      child: CustomPaint(
-                        painter: NumberPaint(),
-                      ),
-                    ),
-                  ),
-                ),
-              ],
-            ),
-          ),
+          AnalogClock(),
           SizedBox(height: 60),
           SingleChildScrollView(
             scrollDirection: Axis.horizontal,

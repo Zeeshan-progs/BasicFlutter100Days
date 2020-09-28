@@ -2,6 +2,8 @@ import 'dart:async';
 import 'dart:math';
 
 import 'package:flutter100days/Day%2017%20Clock/Export/export.dart';
+import 'package:flutter100days/Day%2017%20Clock/Screen/Body.dart';
+import 'package:flutter100days/Day%2017%20Clock/Screen/TimeModes.dart/Analog/NumberPaint.dart';
 
 class AnalogClock extends StatefulWidget {
   @override
@@ -48,6 +50,17 @@ class _AnalogClockState extends State<AnalogClock> {
                   painter: ClockPainter(context, _dateTime),
                 ),
               ),
+            ),
+          ),
+        ),
+        Padding(
+          padding: EdgeInsets.symmetric(
+              horizontal: getProportionateScreenWidth(17)),
+          child: AspectRatio(
+            aspectRatio: 1,
+            child: CustomPaint(
+              // size: Size(400, 400),
+              painter: NumberPaint(),
             ),
           ),
         ),
