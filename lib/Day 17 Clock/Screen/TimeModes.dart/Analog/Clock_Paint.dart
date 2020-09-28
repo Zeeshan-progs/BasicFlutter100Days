@@ -1,6 +1,7 @@
 import 'dart:math';
 
 import 'package:flutter/material.dart';
+import 'package:flutter100days/Day%2017%20Clock/Export/export.dart';
 
 class ClockPainter extends CustomPainter {
   final BuildContext context;
@@ -76,7 +77,7 @@ class ClockPainter extends CustomPainter {
     canvas.drawCircle(center, 10, dotPaint);
     var radius = min(centerX, centerY);
     var outerDot = radius;
-    var innerDot = radius-12;
+    var innerDot = radius - 12;
     for (double i = 0; i < 360; i += 90) {
       var x1 = centerX + outerDot * cos(i * pi / 180);
       var y1 = centerX + outerDot * sin(i * pi / 180);
@@ -91,6 +92,8 @@ class ClockPainter extends CustomPainter {
             ..strokeWidth = 4
             ..strokeCap = StrokeCap.round);
     }
+
+  
   }
 
   bool shouldRepaint(ClockPainter oldDelegate) {
