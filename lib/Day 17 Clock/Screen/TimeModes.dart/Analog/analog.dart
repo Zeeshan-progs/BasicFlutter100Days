@@ -52,8 +52,7 @@ class _AnalogClockState extends State<AnalogClock> {
           ),
         ),
         Positioned(
-          top: 20,
-          // left: size.width / 2.3,
+          top: 50,
           left: 0,
           right: 0,
           child: Consumer<MyThemeModel>(

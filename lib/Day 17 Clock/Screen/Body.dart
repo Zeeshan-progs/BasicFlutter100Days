@@ -6,14 +6,7 @@ class Body extends StatelessWidget {
     return SingleChildScrollView(
       child: Column(
         children: [
-          Text(
-            'Muzaffarpur, Bihar | INDIA  ',
-            style: Theme.of(context)
-                .textTheme
-                .headline5
-                .copyWith(color: kBodyTextColorDark),
-            textAlign: TextAlign.center,
-          ),
+          mainScreenText(context),
           TimeInHourAndMinute(),
           AnalogClock(),
           SizedBox(height: 60),
@@ -23,6 +16,17 @@ class Body extends StatelessWidget {
           ),
         ],
       ),
+    );
+  }
+
+  Text mainScreenText(BuildContext context) {
+    return Text(
+      'Muzaffarpur, Bihar | INDIA  ',
+      style: Theme.of(context)
+          .textTheme
+          .headline5
+          .copyWith(color: kBodyTextColorDark),
+      textAlign: TextAlign.center,
     );
   }
 }
