@@ -21,7 +21,7 @@ class MyApp extends StatelessWidget {
           theme: themeData(context),
           darkTheme: darkThemeData(context),
           themeMode:
-              theme.isLightTheme ? ThemeMode.light : ThemeMode.dark,
+              theme.isLightTheme ? ThemeMode.dark : ThemeMode.light,
           home: Clock(),
         ),
       ),

@@ -18,7 +18,7 @@ class CountryCardCall extends StatelessWidget {
           period: "PM",
          ),
         CountryCard(
-          country: "Sydney",
+          country: "Sydney | Australia",
          timeZone: "+10 HRS | GMT",
           time: '11 : 20',
           iconSrc: 'assets/icons/Sydney.svg',

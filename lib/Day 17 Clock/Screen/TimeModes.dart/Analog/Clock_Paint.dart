@@ -74,6 +74,23 @@ class ClockPainter extends CustomPainter {
     canvas.drawCircle(center, 23,
         Paint()..color = Theme.of(context).backgroundColor);
     canvas.drawCircle(center, 10, dotPaint);
+    var radius = min(centerX, centerY);
+    var outerDot = radius;
+    var innerDot = radius-12;
+    for (double i = 0; i < 360; i += 90) {
+      var x1 = centerX + outerDot * cos(i * pi / 180);
+      var y1 = centerX + outerDot * sin(i * pi / 180);
+      var x2 = centerX + innerDot * cos(i * pi / 180);
+      var y2 = centerX + innerDot * sin(i * pi / 180);
+      canvas.drawLine(
+          Offset(x1, y1),
+          Offset(x2, y2),
+          Paint()
+            ..color = Theme.of(context).primaryColor
+            ..style = PaintingStyle.stroke
+            ..strokeWidth = 4
+            ..strokeCap = StrokeCap.round);
+    }
   }
 
   bool shouldRepaint(ClockPainter oldDelegate) {

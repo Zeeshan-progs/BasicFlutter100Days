@@ -42,7 +42,7 @@ class CountryCard extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
             Text(
-              'New York | USA',
+            country,
               style: Theme.of(context).textTheme.headline4.copyWith(
                   fontSize: getProportionateScreenWidth(18)),
             ),
