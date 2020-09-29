@@ -73,8 +73,8 @@ class _AnalogClockState extends State<AnalogClock> {
               onTap: () => theme.changeTheme(),
               child: SvgPicture.asset(
                 theme.isLightTheme
-                    ? 'assets/icons/Sun.svg'
-                    : 'assets/icons/Moon.svg',
+                    ? 'assets/icons/Moon.svg'
+                    : 'assets/icons/Sun.svg',
                 height: getProportionateScreenHeight(28),
                 width: getProportionateScreenWidth(28),
                 color: Theme.of(context).primaryColor,

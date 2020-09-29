@@ -1,5 +1,4 @@
 import 'package:flutter100days/Day 17 Clock/Export/export.dart';
-import 'package:flutter100days/Day%2017%20Clock/Screen/TimeModes.dart/Analog/NumberPaint.dart';
 
 class Body extends StatelessWidget {
   @override
@@ -10,7 +9,7 @@ class Body extends StatelessWidget {
           mainScreenText(context),
           TimeInHourAndMinute(),
           AnalogClock(),
-          SizedBox(height: 60),
+          SizedBox(height: 20),
           SingleChildScrollView(
             scrollDirection: Axis.horizontal,
             child: CountryCardCall(),
