@@ -25,7 +25,7 @@ class Body extends StatelessWidget {
       style: Theme.of(context)
           .textTheme
           .headline5
-          .copyWith(color: kBodyTextColorDark),
+          .copyWith(color: kBodyTextColorDark).copyWith(fontSize: 20),
       textAlign: TextAlign.center,
     );
   }

@@ -2,7 +2,6 @@ import 'dart:async';
 import 'dart:math';
 
 import 'package:flutter100days/Day%2017%20Clock/Export/export.dart';
-import 'package:flutter100days/Day%2017%20Clock/Screen/Body.dart';
 import 'package:flutter100days/Day%2017%20Clock/Screen/TimeModes.dart/Analog/NumberPaint.dart';
 
 class AnalogClock extends StatefulWidget {
@@ -30,38 +29,32 @@ class _AnalogClockState extends State<AnalogClock> {
         Padding(
           padding: EdgeInsets.symmetric(
               horizontal: getProportionateScreenWidth(15)),
-          child: AspectRatio(
-            aspectRatio: 1,
-            child: Container(
-              decoration: BoxDecoration(
-                color: Theme.of(context).colorScheme.surface,
-                shape: BoxShape.circle,
-                boxShadow: [
-                  BoxShadow(
-                    offset: Offset(0, 0),
-                    color: kShadowColor.withOpacity(0.15),
-                    blurRadius: 64,
-                  ),
-                ],
-              ),
-              child: Transform.rotate(
-                angle: -pi / 2,
-                child: CustomPaint(
-                  painter: ClockPainter(context, _dateTime),
+          child: Container(
+            alignment: Alignment.center,
+            decoration: BoxDecoration(
+              color: Theme.of(context).colorScheme.surface,
+              shape: BoxShape.circle,
+              boxShadow: [
+                BoxShadow(
+                  offset: Offset(0, 0),
+                  color: kShadowColor.withOpacity(0.15),
+                  blurRadius: 64,
                 ),
+              ],
+            ),
+            child: Transform.rotate(
+              angle: -pi / 2,
+              child: CustomPaint(
+                size: Size(300, 300),
+                painter: ClockPainter(context, _dateTime),
               ),
             ),
           ),
         ),
-        Padding(
-          padding: EdgeInsets.symmetric(
-              horizontal: getProportionateScreenWidth(17)),
-          child: AspectRatio(
-            aspectRatio: 1,
-            child: CustomPaint(
-              // size: Size(400, 400),
-              painter: NumberPaint(),
-            ),
+        Center(
+          child: CustomPaint(
+            size: Size(300, 300),
+            painter: NumberPaint(),
           ),
         ),
         Positioned(
